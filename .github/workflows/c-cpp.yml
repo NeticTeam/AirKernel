@@ -19,9 +19,9 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: kernel.elf
-        path: kernel.elf
+        path: kernel/bin/kernel.elf
     - name: Upload CustomOS.img
       uses: actions/upload-artifact@v2
       with:
         name: CustomOS.img
-        path: CustomOS.img
+        path: kernel/bin/CustomOS.img
