@@ -1,0 +1,25 @@
+name: Test kernel build
+
+on: [ push, pull_request, release ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build bootloader
+      run: make bootloader
+    - name: Build kernel
+      run: make kernel
+    - name: Build image
+      run: make buildimg
+    - name: Upload kernel.elf
+      uses: actions/upload-artifact@v2
+      with:
+        name: kernel.elf
+        path: kernel.elf
+    - name: Upload CustomOS.img
+      uses: actions/upload-artifact@v2
+      with:
+        name: CustomOS.img
+        path: CustomOS.img
