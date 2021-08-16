@@ -10,9 +10,9 @@ jobs:
     - name: Build bootloader
       run: make bootloader
     - name: Build kernel
-      run: make kernel
+      run: make -C ./kernel
     - name: Build image
-      run: make buildimg
+      run: make -C ./kernel buildimg
     - name: Upload kernel.elf
       uses: actions/upload-artifact@v2
       with:
