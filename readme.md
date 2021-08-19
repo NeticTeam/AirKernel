@@ -24,6 +24,9 @@ Be sure that it's "dev" not "stable" one, as all really stable versions should b
 ### OS
 There's no OS option available for now, beacuse kernel is incomplete.
 
+## Showcase
+<a href='https://youtu.be/bhx9Phf49ok'>Click me!</a>
+
 ## ❗️ Requirements
 ### Debian/Debian-based
 ```sh
