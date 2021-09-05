@@ -8,7 +8,7 @@
 </p>
   <h3 align="center">AirKernel</h3>
   <p align="center">
-  ⚡ AirKernel is an UNIX-like kernel (UEFI bootloader)
+  ⚡ AirKernel is an UEFI kernel (UEFI bootloader)
   <br/>
   <a href="https://github.com/NeticTeam/AirKernel/issues/new?labels=bug">Report bug</a>
   |
@@ -40,6 +40,12 @@ sudo pacman -S base-devel qemu make mtools nasm git moreutils
 ```sh
 sudo emerge --ask app-emulation/qemu sys-fs/mtools dev-vcs/git dev-lang/nasm sys-apps/moreutils
 ```
+
+## 💻 Plans
+
+### Memory
+- [x] Heap
+- [ ] Paging
 
 ## ❓ How to run
 ```sh
